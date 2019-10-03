@@ -8,9 +8,9 @@ soup2 = BeautifulSoup(r2.text,"html.parser")
 
 link = []
 
-x = soup2.select('img[src^="https://images.pexels.com/photos"]')
+y = soup2.select('img[src^="https://images.pexels.com/photos"]')
 
-for img in x:
+for img in y:
     link.append(img['src'])
 
 
